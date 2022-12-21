@@ -431,7 +431,7 @@ circle:focus {
 }
 .push-down {
   width: 200px;
-  height: 50px;
+  height: 52px;
   margin-left: 10px;
   border: var(--sky);
   border-radius: 4px;
@@ -460,7 +460,7 @@ circle:focus {
   line-height: 30px;
   width: 82px;
   height: 30px;
-  padding-top: 2px;
+  /* padding-top: 2px; */
   padding-left: 42px;
 }
 .backdrop {
@@ -499,4 +499,34 @@ circle:focus {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.open {
+  color: var(--night);
+  width: 448px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 27px;
+}
+.open-from {
+  padding: 28px 40px;
+}
+.open-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--cloud);
+}
+.open-text {
+  display: flex;
+  width: 448px;
+  height: 40px;
+}
+.open-bigtext {
+  display: flex;
+  width: 448px;
+  height: 120px;
 }

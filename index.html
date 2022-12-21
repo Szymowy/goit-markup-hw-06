@@ -453,6 +453,31 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>X</button>
+        <p class="open">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="open-from">
+          <label class="open-label">
+            Imie
+            <input type="name" name="name" placeholder="" class="open-text" />
+          </label>
+          <label class="open-label">
+            Telefon
+            <input type="tel" name="Telefon" placeholder="" class="open-text" />
+          </label>
+          <label class="open-label">
+            E-mail
+            <input type="email" name="email" placeholder="" class="open-text" />
+          </label>
+          <label class="open-label">
+            Komentarz
+            <textarea
+              name="Komentarz"
+              rows="5"
+              placeholder="Wprowadź tekst"
+              class="open-bigtext"
+            ></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
