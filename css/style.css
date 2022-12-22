@@ -509,11 +509,13 @@ circle:focus {
   line-height: 23px;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 12px;
   margin-left: 27px;
 }
 .open-from {
-  padding: 28px 40px;
+  padding-left: 40px;
 }
+
 .open-label {
   font-weight: 400;
   font-size: 12px;
@@ -522,11 +524,76 @@ circle:focus {
 }
 .open-text {
   display: flex;
-  width: 448px;
+  width: 413px;
   height: 40px;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .open-bigtext {
   display: flex;
-  width: 448px;
-  height: 120px;
+  width: 413px;
+  height: 100px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+}
+/* .open-text:hover,
+.open-text:focus,
+.open-bigtext:hover,
+.open-bigtext:focus {
+  border: 1px solid var(--sky);
+  fill: var(--sky); 
+} */
+.open-checkbox {
+  color: var(--cloud);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 20px 37px;
+}
+
+.open-send {
+  /* font-weight: 700; */
+  font-size: 16px;
+  line-height: 30px;
+  width: 200px;
+  height: 50px;
+  margin: 30px 124px;
+  border: 0px;
+  border-radius: 4px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.open-send:hover,
+.open-send:focus {
+  color: var(--milk);
+  background-color: var(--sky);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* .icon-form {
+  fill: var(--night);
+ 
+} */
+.open-icon {
+  position: absolute;
+  left: 55px;
+  transform: translateX(0%);
+}
+/* .open-icon:focus,
+.open-icon:hover {
+  fill: var(--sky);
+} */
+.open-icon-name {
+  top: 18.75%;
+}
+.open-icon-tel {
+  top: 30.75%;
+}
+.open-icon-email {
+  top: 43%;
 }

@@ -427,7 +427,7 @@
           </ul>
         </div>
         <div class="center">
-          <p class="lost">Zapisz się do newslettera</p>
+          <p class="lost">Zapisz się donewslettera</p>
           <from>
             <label>
               <input
@@ -455,18 +455,51 @@
         <button type="button" class="close" data-modal-close>X</button>
         <p class="open">Zostaw swoje dane w formularzu poniżej</p>
         <form class="open-from">
-          <label class="open-label">
-            Imie
-            <input type="name" name="name" placeholder="" class="open-text" />
-          </label>
-          <label class="open-label">
-            Telefon
-            <input type="tel" name="Telefon" placeholder="" class="open-text" />
-          </label>
-          <label class="open-label">
-            E-mail
-            <input type="email" name="email" placeholder="" class="open-text" />
-          </label>
+          <div>
+            <label for="user_name" class="open-label">
+              Imie
+              <svg width="12px" height="12px" class="open-icon open-icon-name">
+                <use href="./images/icon_send2.svg#icon-person_icon"></use>
+              </svg>
+            </label>
+            <input
+              type="name"
+              name="name"
+              class="open-text"
+              id="user_name"
+              required
+            />
+          </div>
+          <div>
+            <label for="user_tel" class="open-label">
+              Telefon
+              <svg width="12px" height="12px" class="open-icon open-icon-tel">
+                <use href="./images/icon_send2.svg#icon-phone_icon"></use>
+              </svg>
+            </label>
+            <input
+              type="tel"
+              name="Telefon"
+              class="open-text"
+              id="user_tel"
+              required
+            />
+          </div>
+          <div>
+            <label for="user_email" class="open-label">
+              E-mail
+              <svg width="12px" height="12px" class="open-icon open-icon-email">
+                <use href="./images/icon_send2.svg#icon-email_icon"></use>
+              </svg>
+            </label>
+            <input
+              type="email"
+              name="email"
+              class="open-text"
+              id="unser-email"
+              required
+            />
+          </div>
           <label class="open-label">
             Komentarz
             <textarea
@@ -475,12 +508,17 @@
               class="open-bigtext"
             ></textarea>
           </label>
-          <label>
-            <input type="checkbox" name="acceptance" checked />
-            Oświadczam iż akceptuję <span href="index.html">Regulamin</span> i
+          <label class="open-checkbox">
+            <input
+              type="checkbox"
+              name="acceptance"
+              checked
+              value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+            />
+            Oświadczam iż akceptuję <span href="index.html"> Regulamin</span> i
             <span href="index.html">Politykę Prywatności</span>.
           </label>
-          <button type="submit">Submit</button>
+          <button type="submit" class="open-send">Wyślij</button>
         </form>
       </div>
     </div>
