@@ -428,6 +428,7 @@ circle:focus {
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .push-down {
   width: 200px;
@@ -443,15 +444,17 @@ circle:focus {
   background-color: var(--sky);
   color: var(--milk);
   fill: var(--milk);
+  transition-delay: 250ms (0.4, 0, 0.2, 1);
 }
 .point-send {
   display: flex;
-  /* align-items: center;
-  text-align: center; */
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
 }
 .icon-send {
-  padding-top: 4px;
-  padding-left: 20px;
+  /* padding-top: 4px; */
+  padding-left: 18px;
 }
 .name-send {
   /* font-family: "Roboto"; */
@@ -461,7 +464,7 @@ circle:focus {
   width: 82px;
   height: 30px;
   /* padding-top: 2px; */
-  padding-left: 42px;
+  /* padding-left: 42px; */
 }
 .backdrop {
   position: fixed;
@@ -515,12 +518,18 @@ circle:focus {
 .open-from {
   padding-left: 40px;
 }
-
 .open-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: var(--cloud);
+}
+
+.sky-icon input:focus,
+.sky-icon textarea:focus {
+  outline: 0px;
+  border: 1px solid var(--sky);
+  fill: #2196f3;
 }
 .open-text {
   display: flex;
@@ -530,7 +539,9 @@ circle:focus {
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .open-bigtext {
   display: flex;
   width: 413px;
@@ -540,13 +551,14 @@ circle:focus {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .open-text:hover,
-.open-text:focus,
+.open-text:focus-within,
 .open-bigtext:hover,
-.open-bigtext:focus {
+.open-bigtext:focus-within {
   border: 1px solid var(--sky);
-  fill: var(--sky); 
+  fill: var(--sky);
 } */
 .open-checkbox {
   color: var(--cloud);
@@ -574,10 +586,10 @@ circle:focus {
   color: var(--milk);
   background-color: var(--sky);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .icon-form {
   fill: var(--night);
- 
 } */
 .open-icon {
   position: absolute;
@@ -586,8 +598,8 @@ circle:focus {
 }
 /* .open-icon:focus,
 .open-icon:hover {
-  fill: var(--sky);
-} */
+  fill: var(--sky); 
+}*/
 .open-icon-name {
   top: 18.75%;
 }
