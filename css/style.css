@@ -450,21 +450,15 @@ circle:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
 }
 .icon-send {
-  /* padding-top: 4px; */
   padding-left: 18px;
 }
 .name-send {
-  /* font-family: "Roboto"; */
-  /* font-style: normal; */
   font-size: 16px;
   line-height: 30px;
   width: 82px;
   height: 30px;
-  /* padding-top: 2px; */
-  /* padding-left: 42px; */
 }
 .backdrop {
   position: fixed;
@@ -524,12 +518,15 @@ circle:focus {
   line-height: 14px;
   color: var(--cloud);
 }
-
+.sky-icon input:focus + p {
+  fill: var(--sky);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .sky-icon input:focus,
 .sky-icon textarea:focus {
   outline: 0px;
   border: 1px solid var(--sky);
-  fill: #2196f3;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .open-text {
   display: flex;
@@ -553,13 +550,6 @@ circle:focus {
   resize: none;
   transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .open-text:hover,
-.open-text:focus-within,
-.open-bigtext:hover,
-.open-bigtext:focus-within {
-  border: 1px solid var(--sky);
-  fill: var(--sky);
-} */
 .open-checkbox {
   color: var(--cloud);
   font-weight: 400;
@@ -569,7 +559,6 @@ circle:focus {
 }
 
 .open-send {
-  /* font-weight: 700; */
   font-size: 16px;
   line-height: 30px;
   width: 200px;
@@ -588,18 +577,11 @@ circle:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .icon-form {
-  fill: var(--night);
-} */
 .open-icon {
   position: absolute;
   left: 55px;
   transform: translateX(0%);
 }
-/* .open-icon:focus,
-.open-icon:hover {
-  fill: var(--sky); 
-}*/
 .open-icon-name {
   top: 18.75%;
 }
