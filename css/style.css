@@ -131,6 +131,15 @@ ul {
 .can {
   padding: 40px 0px 210px;
 }
+.push {
+  background: var(--snow);
+  color: var(--night);
+  font-size: 16px;
+  line-height: 160%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
 .push:hover,
 .push:focus {
   background: var(--sky);
@@ -241,6 +250,7 @@ ul {
 .cheap:focus {
   background-color: var(--sky);
   cursor: pointer;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .live {
   fill: var(--late);
@@ -248,6 +258,7 @@ ul {
 .live:hover,
 .live:focus {
   fill: var(--milk);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cookie {
   padding: 12px;
@@ -260,6 +271,7 @@ ul {
 .icon:focus {
   border: 1px solid var(--sky);
   cursor: pointer;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .live-two {
   width: 170px;
@@ -270,6 +282,7 @@ ul {
 .live-two:hover,
 .live-two:focus {
   fill: var(--sky);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .snacks {
   padding: 18px 38px;
@@ -282,16 +295,6 @@ ul {
   padding: 94px 318px 50px 310px;
   gap: 8px;
 }
-.push {
-  background: var(--snow);
-  color: var(--night);
-  font-size: 16px;
-  line-height: 160%;
-  display: block;
-  border: none;
-  border-radius: 5px;
-}
-
 .five-push:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -392,6 +395,7 @@ ul {
 .address-link:hover,
 .address-link:focus {
   color: var(--sky);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .center {
   padding-top: 4px;
@@ -418,14 +422,16 @@ ul {
 .cheap-down:focus {
   background-color: var(--sky);
   cursor: pointer;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .circle {
   fill: var(--milk);
 }
 .circle:hover,
-circle:focus {
+.circle:focus {
   fill: var(--milk);
   cursor: pointer;
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .letter {
   background-color: var(--fog);
@@ -438,6 +444,9 @@ circle:focus {
   transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .push-down {
+  background-color: var(--sky);
+  color: var(--milk);
+  fill: var(--milk);
   width: 200px;
   height: 52px;
   margin-left: 10px;
@@ -448,9 +457,9 @@ circle:focus {
 }
 .push-down:hover,
 .push-down:focus {
-  background-color: var(--sky);
-  color: var(--milk);
-  fill: var(--milk);
+  background-color: var(--snow);
+  color: var(--night);
+  fill: var(--night);
   transition-delay: 250ms (0.4, 0, 0.2, 1);
 }
 .point-send {
@@ -555,15 +564,16 @@ circle:focus {
   position: absolute;
   left: 55px;
   transform: translateX(0%);
+  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .open-icon-name {
-  top: 18.75%;
+  top: 18.25%;
 }
 .open-icon-tel {
-  top: 30.75%;
+  top: 30.25%;
 }
 .open-icon-email {
-  top: 43%;
+  top: 41.75%;
 }
 .open-bigtext {
   display: flex;
