@@ -477,8 +477,7 @@
                 </svg>
               </p>
             </div>
-          </div>
-          <div>
+
             <div class="sky-icon">
               <label for="user_tel" class="open-label"> Telefon </label>
               <input
@@ -496,8 +495,7 @@
                 </svg>
               </p>
             </div>
-          </div>
-          <div>
+
             <div class="sky-icon">
               <label for="user_email" class="open-label"> E-mail </label>
               <input
@@ -519,33 +517,42 @@
                 </svg>
               </p>
             </div>
+
+            <div class="sky-icon">
+              <label class="open-label">
+                Komentarz
+                <textarea
+                  name="Komentarz"
+                  placeholder="Wprowadź tekst"
+                  minlength="10"
+                  maxlength="300"
+                  class="open-bigtext"
+                ></textarea>
+              </label>
+            </div>
+            <div>
+              <label for="user_checkbox" class="open-checkbox">
+                Oświadczam iż akceptuję
+                <a href="#">Regulamin</a>
+                i
+                <a href="#">Politykę Prywatności</a></label
+              >
+              <input
+                type="checkbox"
+                name="acceptance"
+                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+                for="id_checkbox"
+                class="checkbox"
+                checked
+              />
+              <p>
+                <svg width="16px" height="15px" class="checkbox-icon">
+                  <use href="./images/icon_checkbox.svg#icon-checkbox"></use>
+                </svg>
+              </p>
+            </div>
+            <button type="submit" class="open-send">Wyślij</button>
           </div>
-          <div class="sky-icon">
-            <label class="open-label">
-              Komentarz
-              <textarea
-                name="Komentarz"
-                placeholder="Wprowadź tekst"
-                minlength="10"
-                maxlength="300"
-                class="open-bigtext"
-              ></textarea>
-            </label>
-          </div>
-          <label class="open-checkbox">
-            <input
-              type="checkbox"
-              name="acceptance"
-              checked
-              value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
-            />
-            Oświadczam iż akceptuję
-            <a href="#">Regulamin</a>
-            i
-            <a href="#">Politykę Prywatności</a>
-            .
-          </label>
-          <button type="submit" class="open-send">Wyślij</button>
         </form>
       </div>
     </div>
