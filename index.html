@@ -530,26 +530,24 @@
                 ></textarea>
               </label>
             </div>
-            <div>
-              <label for="user_checkbox" class="open-checkbox">
-                Oświadczam iż akceptuję
-                <a href="#">Regulamin</a>
-                i
-                <a href="#">Politykę Prywatności</a></label
-              >
-              <input
-                type="checkbox"
-                name="acceptance"
-                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
-                for="id_checkbox"
-                class="checkbox"
-                checked
-              />
-              <p>
+            <div class="text-checkbox">
+              <label>
+                <input
+                  type="checkbox"
+                  name="acceptance"
+                  value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+                  class="open-checkbox"
+                  required
+                />
                 <svg width="16px" height="15px" class="checkbox-icon">
                   <use href="./images/icon_checkbox.svg#icon-checkbox"></use>
                 </svg>
-              </p>
+
+                Oświadczam iż akceptuję
+                <a href="#">Regulamin</a>
+                i
+                <a href="#">Politykę Prywatności.</a>
+              </label>
             </div>
             <button type="submit" class="open-send">Wyślij</button>
           </div>
