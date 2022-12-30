@@ -91,6 +91,7 @@ ul {
 .black-link:hover,
 .black-link:focus {
   color: var(--sky);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navi {
   margin-left: auto;
@@ -105,6 +106,7 @@ ul {
 .wait:hover,
 .wait:focus {
   fill: var(--sky);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* type main */
@@ -132,10 +134,11 @@ ul {
   padding: 40px 0px 210px;
 }
 .push {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
   background: var(--snow);
   color: var(--night);
-  font-size: 16px;
-  line-height: 160%;
   display: block;
   border: none;
   border-radius: 5px;
@@ -144,10 +147,12 @@ ul {
 .push:focus {
   background: var(--sky);
   color: var(--milk);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .one-push:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service {
   width: 200px;
@@ -165,7 +170,10 @@ ul {
   line-height: 1.14;
 }
 .seat {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background-color: var(--snow);
+  width: auto;
+  height: auto;
 }
 .boxs {
   color: var(--cloud);
@@ -298,6 +306,7 @@ ul {
 .five-push:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all-marketing {
   width: 121px;
@@ -324,6 +333,7 @@ ul {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-speak {
   position: relative;
@@ -336,16 +346,16 @@ ul {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196f3e5;
   color: var(--milk);
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5555;
   justify-content: center;
 }
 .box-speak:hover .overlay {
   transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-speak-text {
   padding: 49px 45px 49px 24px;
@@ -444,6 +454,9 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .push-down {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
   background-color: var(--sky);
   color: var(--milk);
   fill: var(--milk);
@@ -469,7 +482,7 @@ ul {
 }
 .name-send {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   width: 82px;
   height: 30px;
 }
@@ -526,7 +539,7 @@ ul {
   height: 23px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
@@ -534,6 +547,7 @@ ul {
 }
 .open-from {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .sky-icon input:focus + p {
   fill: var(--sky);
@@ -551,11 +565,15 @@ ul {
   line-height: 14px;
   color: var(--cloud);
 }
+.open-label textarea[type="placeholder"] {
+  color: rgba(117, 117, 117, 0.5);
+}
 .open-text {
   display: flex;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 35px;
+  margin-top: 4px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -563,24 +581,25 @@ ul {
 }
 .open-icon {
   position: absolute;
-  left: 55px;
+  left: 54px;
   transform: translateX(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .open-icon-name {
-  top: 18.25%;
+  top: 18.75%;
 }
 .open-icon-tel {
-  top: 30.25%;
+  top: 31.25%;
 }
 .open-icon-email {
-  top: 41.75%;
+  top: 43.75%;
 }
 .open-bigtext {
   display: flex;
-  width: 448px;
+  width: 100%;
   height: 100px;
   padding: 12px 16px;
+  margin-top: 4px;
   margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -593,7 +612,10 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 5px 37px;
+  margin: 5px 30px;
+}
+.text-checkbox a {
+  color: var(--sky);
 }
 .open-checkbox {
   position: relative;
@@ -614,31 +636,36 @@ ul {
   fill: var(--milk);
   border: 1px solid var(--sky);
   border-radius: 2px;
-  top: 72.75%;
-  left: 55px;
+  top: 75.5%;
+  left: 48px;
   transform: translate(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 .open-checkbox:checked + svg {
   opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .open-send {
+  color: var(--milk);
+  background-color: var(--sky);
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   width: 200px;
   height: 50px;
   margin: 30px 124px;
   border: 0px;
-  border-radius: 2px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
   justify-content: center;
   cursor: pointer;
 }
 .open-send:hover,
 .open-send:focus {
-  color: var(--milk);
-  background-color: var(--sky);
+  color: var(--night);
+  background-color: var(----snow);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
