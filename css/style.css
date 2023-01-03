@@ -626,6 +626,7 @@ ul {
   background: var(--milk);
   margin: 0;
   appearance: none;
+  /* top: 2px; */
   top: 2px;
   left: -87.5%;
   /* left: -392px; */
@@ -640,7 +641,8 @@ ul {
   fill: var(--milk);
   border: 1px solid var(--sky);
   border-radius: 2px;
-  top: 439px;
+  /* top: 439px; */
+  top: 75.5%;
   left: 8.25%;
   /* left: 43.5px; */
   transform: translate(100%);
