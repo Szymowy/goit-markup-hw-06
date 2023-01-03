@@ -616,6 +616,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   margin: 5px 45px;
+  gap: 10px;
 }
 .text-checkbox a {
   color: var(--sky);
@@ -627,8 +628,8 @@ ul {
   margin: 0;
   appearance: none;
   top: 2px;
-  left: 400px;
-  /* left: -393px; */
+  left: -400px;
+  /*left: -393px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
   width: 16px;
@@ -638,7 +639,7 @@ ul {
   position: absolute;
   background-color: var(--sky);
   fill: var(--milk);
-  border: 1px solid var(--sky);
+  /* border: 1px solid var(--sky); */
   border-radius: 2px;
   top: 75.5%;
   left: 42px;
