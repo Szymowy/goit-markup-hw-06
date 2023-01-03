@@ -627,8 +627,7 @@ ul {
   margin: 0;
   appearance: none;
   top: 2px;
-  left: -400px;
-  /* left: -392px; */
+  left: -392px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
   width: 16px;
